@@ -1,0 +1,52 @@
+{
+  "filmai": [
+    {
+      "name": "Sandwich",
+      "info": "Bread with meat and vegetables",
+      "photo": "https://s3-alpha-sig.figma.com/img/1e7a/c6e5/7228936bc326698870da10eba7374cab?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pJfeyjor5Ow3Idctmqt5uWIzO30F6jHi8O~YwRWW~ET043SKVWklPvFN-SM4zkUype7bCvP-4YwfAFxmrDmBLvr-pzXjlcl0-lS5QCeFTV~tmIdAJ6~XpWgjKPmXtibhOeEha8l0H93Ix-zU79OnBMIw0cOCIOwS9ZhTK4zcEBscovqfMgesnW2iPz~saHRP5V-NxEcX19P1TfIXZseNkMGXvkNcd~TL7-dY8X6wQkJTrbTtmvyh2n9It6DsOsVwYAX0RvOs~-rgZ-2NTPzuCUnjqP6Hm3wGlutbO1fXTZ5W8kTbbBep0AtSxcW7DTzK3-1umCgG-ns7SZSxhrjtHw__",
+      "rating":"4.7",
+      "price": "7€" ,
+      "id": "0"
+    },
+    {
+      "name": "Hot milk",
+      "info": "Hot Milk with less sugar",
+      "photo": "https://s3-alpha-sig.figma.com/img/2c6e/be61/e2802276b6dd10aef80543e7959766c0?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p8nHylvZTnChP9V16bj7tQCKOLaW1SjpIq8wngYMLs5PBA3H46oaG7QEyiVldaQOHVd~O~NNoQRAExeeuusyU1lJ5MYjU30YOiMmTTUYzwYCpHE9i7svP0r1dwuHS28sAmN9PRexJWvj0qWuZiG-QPHiK~cTKVumHfCEUPU4VAy~Jtxje-PPGtblpsspNOeGhU22KNsHOZ5Tom8MNcNdG7YAegbGPbdWNf3u1JwmVQZXv2WvTsYX2TuqhRQQDC3NfLXuYM~9Opr4t7y3ZsysHGGhTpylemxSYMiWfFK1rRmYHLpFNwVhrQt-hNRiaM9ibYYbjSaFDwOa1lZVLEW--Q__",
+      "rating":"4.6",
+      "price": "3€",
+      "id": "1"
+    },
+    {
+      "name": "Coffe Ice Cream",
+      "info": "Coffe with ice cream vanilla",
+      "photo": "https://s3-alpha-sig.figma.com/img/2cff/6e29/a2b01417fd392e15cf7be6fffa9cf3a2?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qN7zZ9LQKPk3QdV8hUJ1lKvhqE0d-vO4BErIVASDA8tRhlJH~Mdscz9qsqmGg~5ugtcyqvE4b1qy9p5fHpUWWcUe~ECfuwkN61uNqBNloE3IrOB5jRDNNfbPGAXlg5RXpFRwoOr30SXzhapR7~4G0boBCBKSon6KuY9h8R~2bQ0XvzeId9XSxgxv-8nujsglAk-LFN27k2F7IPf2lCTYC7kKhOE3rfWgJQYrgJaxsd8ldJTaYh0R~ijrre-BITE2tgpdV~Vw9eo1Pl83sN6wtG8Q1rVu7H0H7J-hAE~MEJI0uViGHsRx3yeOZXG6S9moy9zHuERMxrQintQEluTiYA__",
+      "rating":"4.9",
+      "price": "6€",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Cappucino",
+      "info": "Hot Cappucino",
+      "photo": "https://s3-alpha-sig.figma.com/img/22b0/d206/23f459b8423be989204612c38225fdca?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KRz6p375SLAddAwISnFA0x8PN3YYm7vjz4c6JXjKh2ksdftpft6N38VLB8dhxqLoYOKTr3l4hJQsQbdGzOOEOt7XdRtiBcLvh2GLxqof5QWWcqb-JZK0iL5xrn5k7dUlUl-Wg1Swvy-JIuOnXqEABqGmFfw5n41yEb3skXDYL-ET5pxUkMKe-mIb~IqIlOGiGVd~bNMEB~w3dMYEeP6fUhol4D-cKi8AFxYkTgbv-Ko7vIvSRJfYf4ZVcEnEzrkHlpJtE0F4AJxCP3Woo3~RpGQyA7yblEEiTYMwwgK~A7XloVqWD-HuMTwrvGze4-KzolaVMF-yanfvAd0daBgmSQ__",
+      "rating":"4.6",
+      "price": "5€"
+    },
+    {
+      "id": "4",
+      "name": "Moccacinno",
+      "info": "Hot Moccanino",
+      "photo": "https://s3-alpha-sig.figma.com/img/89bd/9eb3/ddf4574a286e086b3be2a739299db1c2?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nd64Q5MxKtxdeIi-JQD4wB-6xOa8UmVyr~aaoTBRJT5uVOlWmivr28lm7VfIlYTE1UNj0L6JMMfiw6O0yb2JUqvdQATBPSEW40hpOcKPbUMcwbQebX-AqA4-h1Cb-gVuR4daWufjpnp8MTbfzXLrYh8c9Nx8OiIQM61Zi6dJCo-PEplTOHWskJUipRjd0KKNQyhwKjJDL56dK4PN7zxLfCDd9DwKOV9Y6mTT6YPq0bKIDoscP5isDGJVqWzgLc-vgizb0RhcEBIcFGoDn~Ij2LaAyIgmr2e7slRhjN8NunnjFM-YO0IYuG8-u2BHsm-YnFHItf-ytZuo9lX99a1mrw__",
+      "rating":"4.4",
+      "price": "4.5€"
+    },
+    {
+      "id": "5",
+      "name": "Waffle Ice cream",
+      "info": "Wafle with Ice cream",
+      "photo": "https://s3-alpha-sig.figma.com/img/3496/6ea2/d13341931086a37e8dddf9de0d0d6bdf?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I1c61lVd2s0~9CrhdFJqyiI9WjGatFZeaUH7U9yzORWqnc~qME842JLMlx2ZlL7C~WSeCfMugVCL3yCGLqa2CBiVbL8C0u9H14UbBfsFgMKU~KSm5DaThH7lJ2zaKI5cvGu44c0G4i4mm-7kUs7bEM7ncgr~f00VY63BZyfMhY2Z23p~4JQk9JOpc2IpbLn1c8bWlxf2gdvY3B4Dzw6Lej12RNKafkpBRBSH-R0f4wkugWfq39u3vXGRIlBiH1KmmeiytVl~cf0JFbut28G1N8R0ltKPD0YwJfVlQbEEhHi8QYd2LWMyCHqcn4K6QBt-lXTqMTLEUcHMcbT1M~U98Q__",
+      "rating":"4.9",
+      "price": "7€"
+    }
+  ]
+}
