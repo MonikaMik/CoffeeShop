@@ -182,6 +182,7 @@ h2 {
 
 .card-icon {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
