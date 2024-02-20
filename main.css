@@ -55,6 +55,11 @@ footer {
                 top: 2px;
                 right: 2px;
                 padding: 8px 14px;
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                    background-color:#FF902B;
+                }
             }
         }
     }
@@ -76,6 +81,9 @@ footer {
                     > .bi {
                         color:#FF902B;
                         font-size: 1.2rem;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
             }
@@ -95,6 +103,9 @@ footer {
             color: white;
             text-decoration: none;
             cursor: pointer;
+            &:hover {
+                color:#FF902B;
+            }
         }
     }
 }
@@ -110,6 +121,7 @@ footer {
         > .footerInfo {
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             > .logoSection {
                 flex-basis: 30%;
                 > h3, > p {
@@ -126,6 +138,33 @@ footer {
             > form {
                 flex-basis: 35%;
                 text-align: left;
+                > .inputContainer {
+                    position: relative;
+                    display: inline-block;
+                    max-width: 30rem;
+                    > input {
+                        border-radius: 35px;
+                        border: none;
+                    }
+                    > input[type='email'] { 
+                        width: 100%;
+                        padding: 10px 0 10px 10px;
+                        box-sizing: border-box;
+                    }
+                    > input[type='submit'] {
+                        position: absolute;
+                        background-color: black;
+                        color:white;
+                        top: 2px;
+                        right: 2px;
+                        padding: 8px 14px;
+                        cursor: pointer;
+                        &:hover {
+                            color: black;
+                            background-color:#FF902B;
+                        }
+                    }
+                }
             }
         }
         > .copyrights {
