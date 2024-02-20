@@ -27,18 +27,12 @@ body{
 /* hot to use section */
 #howToUse {
     padding: 6% 7%;
-    > h3 {
-        font-size: 35px;
-        > .text-with-underline {
-            text-decoration: underline;
-            text-decoration-color: #ff902A;
-            text-decoration-thickness: 4px;
-        }
-   }
+    margin-bottom: 6rem;
     > .howToCardContainer {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         text-align: center;
+        gap: 2rem;
         > .howToCard {
             > p {
                 color: gray;
@@ -316,6 +310,16 @@ footer {
 
 
 @media (min-width: 800px) {
+    #howToUse {
+        margin-bottom: 2rem;
+        > .howToCardContainer {
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0;
+            max-width: 90rem;
+        margin: 0 auto;
+        }
+    }
     footer {
         > .footerInfo {
             flex-direction: row;
@@ -382,4 +386,3 @@ footer {
         }
     }   
 }
-
