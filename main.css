@@ -1,157 +1,173 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css'
+);
 
-#cardsSection{
-  padding: 2% 7%;
-
-  >h1{
-    font-size: 2.5em;
-    letter-spacing: 1px;
-
-    >.text-with-underline {
-      position: relative;
-    }
-    .text-with-underline::after {
-      content: ''; 
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 100%;
-      height: 4px; 
-      background-color: #ff902A;
-    }
-
-  }
-}
-#productsContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap:50px;
+#header{
+    display:flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    background-color: rgb(252, 215, 170);
 
 }
-.productCard {
-  font-family: 'Titillium Web', sans-serif;
-  width: 300px;
-  height: 300px;
-  padding: 30px 10px;
-  position: relative;
 
-  >img{
-    width: 100%;
-    height: 70%;
-    border-radius: 10px;
-    object-fit:fill
-  }
-  >:nth-child(2){
-    position: absolute;
-    top:40px;
-    left:25px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 2px 7px;
-    box-shadow:0px 0px 0px 3px rgba(198, 198, 198, 0.56);
-    color:#3c2e15 ;
-    font-weight: bold;
-  }
-
-  >.infoWrap{
+nav{
     display: flex;
-    flex-direction: column;
-  }
-  >.priceWrap{
-    display: flex;
-    flex-direction: column;
+    align-items: center; 
+}
 
-    
-  }
-  .wrap{
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-    flex-shrink: 1;
+    align-items: center;
+    gap:20px;
+    margin: 0;
+}
 
-    p{
-      color:#7e7d7a;
-      font-size: 14px;
-      padding-right:50px;
-      line-height: 20px;
-      font-weight: 600;
-    }
-  }
-  .bi-cart-plus{
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navInput {
+    height: 30px;
+    border: 0px;
+    border-radius: 25px;
+    padding: 5px 10px; 
+    margin-left: 70px;
+}
+
+.cartIcon {
+    display: flex;
+    align-items: center;
+}
+
+.cartIcon i {
+    font-size: 20px;
+}
+
+#hero{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(252, 215, 170);
+}
+
+.heroImg{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 30px;
+    margin-right: none; */
+    justify-content: center;
+    width: 250px; 
+    height: 250px; 
+    background-color: rgb(89, 49, 33); 
+    border-radius: 50%; 
+    /* overflow: hidden; */
+}
+
+.heroPar{
+    color:grey;
+}
+
+.Cup{
+    height: 220px;
+    width: 200px;
+    display: block; 
+    margin: auto 0;
+}
+
+.orderButton{
+    height: 40px;
+    width: 150px;
+    border: 0px;
+    border-radius: 25px;
     color:white;
-    text-align: center;
-    font-size: 15px;
+    background-color:rgb(89, 49, 33) ;
+}
 
-  }
-  .bi-star-fill{
-    color: gold;
-    padding-left: 5px;
-    font-size: 14px;
-  }
-  .buyIcon{
-    background-color: #ff902a;
-    padding:5px 10px;
-    border-radius: 50%;
+.moreButton{
+    height: 40px;
+    width: 150px;
+    border: 0px;
+    border-radius: 25px;
+    background-color: rgb(252, 215, 170);
     
-  }
-}#AboutUs{
-    
-    background-image: url('./images/bg-image.png') ;
-    background-size: cover; 
+}
+
+.heroCards {
+    background-color: rgb(252, 215, 170);
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 2% 7%;
-    
-    >img{
-        border: 10px solid rgb(250, 248, 248);
-        border-radius: 30px;
-        margin-top: -100px;
-        
-        
-    }
-    >div{
-        font-family: sans-serif;
-        justify-content: center;
-        padding-left: 50px;
-
-    >button{
-        background-color: rgb(42, 8, 8);
-        color: rgb(195, 156, 114);
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 50px;
-    }
-    >h1{
-        font-size: 35px;
-    >u{
-        text-decoration-color: rgb(235, 140, 24);
-    }
-    }
-    >h3{
-        font-size: 25px;
-        line-height: 1.5;
-    }
-    >p{
-        color: gray;
-        font-size: 20px;
-        line-height: 1.5;
-    }
-    }
+    padding: 20px;
 }
 
-@media (max-width: 800px) {
-    #AboutUs{
-        display: flex;
-        flex-direction: column;
-        >div{
-            padding-left: 50px;
-        }
-    }
+.allCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning of star icon */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+.price {
+    font-size: 1.1em;
+    color: #e44d26; /* Orange color for price */
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.card .card-icon i {
+    color: #666;
+    margin-right: 5px;
+}
+
+.highlight{
+color:rgb(239, 133, 3)
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: rgb(239, 133, 3) 
 }

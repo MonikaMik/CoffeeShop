@@ -8,25 +8,77 @@
     <link rel="stylesheet" href="./main.css">
     <script type="module" src="./main.js"></script>
 </head>
+<header>
+<div id="header">
+    <div class="logo">
+        <img src="./images/logo_coffe.png" alt="Coffee Shop Logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#"><span class="highlight">About Us</span></a></li>
+            <li><a href="#">Our Product</a></li>
+            <li><a href="#">Delivery</a></li>
+            <input class="navInput" type="text"  placeholder="Cappuccino" >
+        </ul>
+    </nav>
+
+    <div class="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+</div>
+</header>
 
 <body>
-    <main>
-        <section id="AboutUs"><!--About Us-->
-            <img src="./images/unsplash_3n3mPoGko8g.png" alt="Kavos Puodelis">
-        <div>
-            <h1>About <u>us</u></h1>
-            <h3>We provide quality coffe,<br> and ready to deliver.</h3>
-            <p>We are a company that makes and distributes<br> delicious drinks. Our main product is made with a<br> secret recipe and available in stores worldwide.</p>
-            <button>Get your coffee</button>
-        </div>
-        </section>
-        <section id="cardsSection">
-            <h1>Special menu <span class="text-with-underline">for you</span></h1>
-            <div id="productsContainer">
+    <section id="hero">
+        <div class="heroText">
+            <h1>Enjoy your <span class="highlight">coffee</span> <br>before your activity</h1>
+            <p class="heroPar">Boost your productivity and build your <br>
+             mood with  a glass of cofee in the morning</p>
+            <button class="orderButton">Order now</button>
+            <button class="moreButton"><span class="highlight">More menu</span></button>
+        </div>  
+        <div class="heroImg">
+            <img class="Cup" src="./images/unsplash_PKXAiiy1O4U.png" href="cup">
+        </div>  
+    </section>
+    <section class="heroCards">
+        <h1>Popular Now</h1>
+        <div class="allCards">
+            <div class="card">
+                <img src="./images/img_product.png" alt="Coffee">
+                <h2>Vanilla Latte</h2>
+                <div class="price">$4.99</div>
+                <button>Hot</button>
+                <button>Cold</button>
+                <div class="card-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer></footer>
-</body>
 
+            <div class="card">
+                <img src="./images/img_product (1).png" alt="Coffee">
+                <h2>Espresso</h2>
+                <div class="price">$3.99</div>
+                <button>Hot</button>
+                <button>Cold</button>
+                <div class="card-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/img_product (2).png" alt="Coffee">
+                <h2>Hazelnut Latte</h2>
+                <div class="price">$5.20</div>
+                <button>Hot</button>
+                <button>Cold</button>
+                <div class="card-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
+
