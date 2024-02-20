@@ -10,10 +10,15 @@
     padding-top: 20px;
     justify-content: space-around;
     align-items: baseline;
-    background-image: url("./images/bg-image\ \(1\).png")
-
 }
 
+.coffeeBg {
+    background-image: url(./images/coffeeBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 .search-container {
     position: relative;
     display: flex;
@@ -73,8 +78,6 @@ li a{
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 150px;
-    background-color: #f9d9aa;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .heroImg{
@@ -137,7 +140,7 @@ li a{
     padding: 15px;
     border:5px solid #bebdbd2e;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
     position: relative; 
     display: flex;
