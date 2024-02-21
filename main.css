@@ -4,7 +4,28 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* commonly used classes */
+body{
+    font-family: "Poppins", sans-serif;
+}
+.primaryTitle {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.secondaryTitle {
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 1rem 0 0.3rem;
+    font-weight: 500;
+}
+.text-with-underline {
+    text-decoration: underline;
+    text-decoration-color: #ff902A;
+    text-decoration-thickness: 4px;
+}
 
+/* header */
 #header{
     display:flex;
     padding-top: 20px;
@@ -71,36 +92,44 @@ li a{
     font-size: 20px;
 }
 
+/* hero */
 #hero{
-    height: 500px;
+    height: 450px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
 }
 
 .heroImg{
     display: flex;
     align-items: center;
-   
+    >img {
+        max-width: 500px;
+        height: auto;
+    }
 }
 
 .heroPar{
-    color:grey;
-}
-
-.Cup{
-   height: 250px;
+    color: gray;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 1rem;
 }
 
 .orderButton{
     height: 40px;
     width: 150px;
-    border: 0px;
+    border: none;
     border-radius: 25px;
     color:white;
-    background-color:rgb(89, 49, 33) ;
+    background-color:rgb(89, 49, 33);
+    cursor: pointer;
+    &:hover {
+        background-color: #ff902A;
+        color: black;
+    } 
 }
 
 .moreButton{
@@ -109,7 +138,7 @@ li a{
     border: 0px;
     border-radius: 25px;
     background-color: rgb(252, 215, 170);
-    
+    cursor: pointer;
 }
 
 .heroCards {
@@ -121,9 +150,12 @@ li a{
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 50px;
-    margin-top: -300px;
+    margin-top: -230px;
     border-bottom-left-radius: 50px ;
     border-bottom-right-radius: 50px ;
+    >h1 {
+        font-weight: 600;
+    }
   }
   
   .allCards {
@@ -133,7 +165,6 @@ li a{
   }
   
   .card {
-    max-width: 250px;
     background-color: white;
     height: fit-content;
     margin: 10px;
@@ -145,6 +176,7 @@ li a{
     position: relative; 
     display: flex;
     flex-direction: column; 
+    flex-basis: 350px;
 }
 
 .card img {
@@ -205,30 +237,9 @@ color:rgb(239, 133, 3);
     text-decoration-color: rgb(239, 133, 3) 
 }
 
-/* commonly used classes */
-body{
-    font-family: "Poppins", sans-serif;
-}
-.primaryTitle {
-    font-size: 35px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.secondaryTitle {
-    font-size: 25px;
-    line-height: 1.5;
-    margin: 1rem 0 0.3rem;
-    font-weight: 500;
-}
-.text-with-underline {
-    text-decoration: underline;
-    text-decoration-color: #ff902A;
-    text-decoration-thickness: 4px;
-}
-
 /* hot to use section */
 #howToUse {
-    padding: 6% 7%;
+    padding: 3% 7% 6%;
     margin-bottom: 6rem;
     > .howToCardContainer {
         display: flex;
@@ -249,41 +260,23 @@ body{
 /* product card section */
 #cardsSection{
   padding: 2% 7%;
-
-  /* >h1{
-    font-size: 2.5em;
-    letter-spacing: 1px;
-
-    >.text-with-underline {
-      position: relative;
-    }
-    .text-with-underline::after {
-      content: ''; 
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 100%;
-      height: 4px; 
-      background-color: #ff902A;
-    }
-
-  } */
+  margin: 0 auto;
 }
 #productsContainer{
   display: flex;
+  margin: 2rem auto 0;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap:50px;
+  justify-content: center;
+  gap: 4rem;
 
 }
 .productCard {
   width: 300px;
   height: 300px;
-  padding: 30px 10px;
+  padding: 10px 10px 15px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
-
   >img{
     width: 100%;
     height: 70%;
@@ -292,7 +285,7 @@ body{
   }
   >:nth-child(2){
     position: absolute;
-    top:40px;
+    top:25px;
     left:25px;
     background-color: white;
     border-radius: 20px;
@@ -301,27 +294,20 @@ body{
     color:#3c2e15 ;
     font-weight: bold;
   }
-
   .infoWrap{
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
   }
   .priceWrap{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
-
-    
+    gap: 1rem;
   }
   .wrap{
     display: flex;
     justify-content: space-between;
-    padding: 0px 10px;
+    padding: 10px 10px;
     flex-shrink: 1;
-
     p{
       color:#7e7d7a;
       font-size: 14px;
@@ -354,7 +340,7 @@ body{
   }
   .bi-info-circle{
     position: absolute;
-    top:40px;
+    top:25px;
     right:25px;
     color:white;
     cursor: pointer;
@@ -370,22 +356,6 @@ body{
   border-radius: 10px;
   box-shadow:0px 0px 0px 3px rgba(198, 198, 198, 0.56);
   background-color: #DDD3C4;
-
-    >h1{
-      
-    >.text-with-underline {
-      position: relative;
-    }
-    .text-with-underline::after {
-      content: ''; 
-      position: absolute;
-      left: 10px;
-      bottom: -5px;
-      width: 97%;
-      height: 4px; 
-      background-color: #ff902A;
-    }
-  }
   >p{
     text-align: center;
     font-weight: bold;
@@ -400,7 +370,6 @@ body{
 
 }
 #AboutUs{
-    
     background-image: url('./images/bg-image.png') ;
     background-size: cover; 
     display: flex;
@@ -420,29 +389,23 @@ body{
         padding-left: 40px;
 
     >button{
-        background-color: rgb(42, 8, 8);
-        color: rgb(195, 156, 114);
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 50px;
+        height: 40px;
+        width: 150px;
+        border: none;
+        border-radius: 25px;
+        color:white;
+        background-color:rgb(89, 49, 33);
+        cursor: pointer;
+        &:hover {
+            background-color: #ff902A;
+            color: black;
+        } 
     }
-    >h1{
-        font-size: 50px;
-    >u{
-        text-decoration-color: rgb(235, 140, 24);
-    }
-    }
-    >h3{
-        font-size: 25px;
-        line-height: 1.5;
-    }
-    >p{
+    > p {
         color: gray;
         font-size: 20px;
         line-height: 1.5;
+        margin: 1rem 0;
     }
     }
 }
@@ -507,35 +470,55 @@ body{
   font-family: sans-serif;
   padding-left: 100px;
   position: relative;
-  >p{
+  > p {
     color: gray;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 1rem 0;
     width: 350px;
-  }
+}
+
 }
 
 #addReview {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  > input[type='submit'] {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    background-color:rgb(89, 49, 33);
+    cursor: pointer;
+    &:hover {
+        background-color: #ff902A;
+        color: black;
+    } 
+  }
 }
 
 #addReview > div {
   display: flex;
   width: 100%;
   margin-bottom: 15px;
+  gap: 10px;
 }
 
 #addReview > div > label {
-  flex-basis: 50%;
+  flex-basis: 20%;
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #333;
+  text-align: right;
+  padding-top: 5px;
 }
 
 #addReview > div > input,
 #addReview > div > textarea {
-  flex-basis: 50%;
+  flex-basis: 70%;
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
@@ -564,6 +547,7 @@ body{
     #WhatAboutUs {
       display: flex;
       flex-direction: column;
+      overflow: auto;
     } 
     #reviewContainer{
       display: flex;
