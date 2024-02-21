@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee shop</title>
-    <link rel="stylesheet" href="./main.css">
-    <script type="module" src="./main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee shop</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
 </head>
+
 <body>
-    <main>
-        <h1>labas</h1>
-        <h1>labas</h1>
-        <section id="AboutUs"><!--About Us-->
-            <img src="./images/unsplash_3n3mPoGko8g.png" alt="Kavos Puodelis">
-        <div>
-            <h1>About <u>us</u></h1>
-            <h3>We provide quality coffe,<br> and ready to deliver.</h3>
-            <p>We are a company that makes and distributes<br> delicious drinks. Our main product is made with a<br> secret recipe and available in stores worldwide.</p>
-            <button>Get your coffee</button>
-        </div>
-        </section>
-    </main>
+  <main>
+    <section id="AboutUs"><!--About Us-->
+      <img src="./images/unsplash_3n3mPoGko8g.png" alt="Kavos Puodelis">
+      <div>
+        <h1>About <u>us</u></h1>
+        <h3>We provide quality coffee,<br> and ready to deliver.</h3>
+        <p>We are a company that makes and distributes<br> delicious drinks. Our main product is made with a<br> secret
+          recipe and available in stores worldwide.</p>
+        <button>Get your coffee</button>
+      </div>
+    </section>
+    <section id="WhatAboutUs"><!--What they say about us-->
+      <div id="fonoId"></div>
+      <div id="newReview">
+        <h1>What they say about us</h1>
+        <p>We always provide the best service<br> and always maintain the quality of<br> coffee</p>
+
+        <form id="addReview">
+
+          <div>
+            <label for="vardas">Vardas:</label>
+            <input type="text" name="vardas" id="vardas">
+          </div>
+          <div>
+            <label for="atsiliepimas">Atsiliepimas:</label>
+
+            <textarea name="atsiliepimas" id="atsiliepimas" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <label for="nuotrauka">Nuotrauka:</label>
+            <input type="url" name="nuotrauka" id="nuotrauka">
+          </div>
+          <input type="submit" value="Pateikti atsiliepimą">
+        </form>
+      </div>
+      <div id="reviewContainer"></div>
+
+    </section>
+
+  </main>
 </body>
+
 </html>
