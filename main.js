@@ -2,7 +2,6 @@ import ProductCard from "./components/productCardClass.js";
 import review from './components/review.js';
 import reviewData from './components/reviewData.js';
 
-
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
@@ -13,7 +12,7 @@ fetch("data.json")
     });
   })
 
-const perziuros = reviewData.map(perziura => new review(perziura));
+  const perziuros = reviewData.map(perziura => new review(perziura));
 
 const KorteliuSekcija = document.querySelector('#reviewContainer');
 KorteliuSekcija.classList.add('Cards1');
