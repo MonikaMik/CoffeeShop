@@ -17,7 +17,7 @@ export default class Perziura {
 
   render() {
     const divCard = document.createElement('div');
-    divCard.classList.add('card');
+    divCard.classList.add('card1');
 
     const image = document.createElement('img');
     image.setAttribute('src', this.nuotrauka);
